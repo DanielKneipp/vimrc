@@ -16,7 +16,7 @@ I would, of course, recommend using the awesome version.
 
 The awesome version includes a lot of great plugins, configurations and color schemes that make Vim a lot better. To install it simply do following from your terminal:
 
-    git clone --depth=1 https://github.com/amix/vimrc.git ~/.vim_runtime
+    git clone --depth=1 --recursive https://github.com/amix/vimrc.git ~/.vim_runtime
     sh ~/.vim_runtime/install_awesome_vimrc.sh
 
 
@@ -97,6 +97,7 @@ I recommend reading the docs of these plugins to understand them better. Each pl
 * [vim-multiple-cursors](https://github.com/terryma/vim-multiple-cursors): Sublime Text style multiple selections for Vim, CTRL+N is remapped to CTRL+S (due to YankRing)
 * [vim-yankstack](https://github.com/maxbrunsfeld/vim-yankstack): Maintains a history of previous yanks, changes and deletes
 Remove all clutter and focus only on the essential. Similar to iA Writer or Write Room [Read more here](http://amix.dk/blog/post/19744)
+* [tagbar](https://github.com/majutsushi/tagbar): Vim plugin that displays tags in a window, ordered by scope
 
 
 ## Included color schemes
@@ -161,6 +162,9 @@ Open [ctrlp.vim](https://github.com/kien/ctrlp.vim) plugin to quickly find a fil
 
     map <leader>z :Goyo<cr>
 
+[tagbar](https://github.com/majutsushi/tagbar) mappings:
+
+    map <leader>tb :TagbarToggle<CR>
 
 ### Normal mode mappings
 
