@@ -1,3 +1,6 @@
+" Hide bottom bar text
+set noshowmode
+
 " TagBar
 map <F8> :TagbarToggle<CR>
 
@@ -16,10 +19,19 @@ map <F6> :SyntasticCheck<CR>
 
 " let $TERM="xterm-256color"
 
-" Set solarized colorscheme
+" lightline configs
 let g:lightline = {
-      \ 'colorscheme': 'solarized',
-      \ }
+    \ 'colorscheme': 'solarized',
+    \ 'active': {
+        \   'left': [ [ 'mode', 'paste' ],
+        \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
+        \ },
+    \ 'component_function': {
+        \   'gitbranch': 'fugitive#head'
+    \ },
+\ }
+
+" Set solarized colorscheme
 syntax enable
 set background=light
 let g:solarized_termcolors=256 "this is what fixed it for me
