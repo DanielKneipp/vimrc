@@ -2,8 +2,19 @@
 set -e
 
 _CURR_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-mkdir -p "~/vim_runtime"
-cp "$_CURR_DIR/my_configs.vim" "~/vim_runtime/my_configs.vim"
+
+function inst_YouCompleteMe {
+    local ycm_dir="$_CURR_DIR/sources_non_forked/YouCompleteMe"
+    local old_dir="`pwd`"
+    sudo apt-get install -y build-essential cmake python-dev python3-dev \
+        && cd "$ycm_dir" \
+        && ./install.py --clang-completer \
+        && cd "$old_dir" \
+        && echo "SUCCESS: YouCompleteMe installed" \
+        || (echo "ERROR: Failed to install YouCompleteMe" && exit 1)
+}
+
+inst_YouCompleteMe
 
 cd ~/.vim_runtime
 

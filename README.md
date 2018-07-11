@@ -17,7 +17,7 @@ I would, of course, recommend using the awesome version.
 The awesome version includes a lot of great plugins, configurations and color schemes that make Vim a lot better. To install it simply do following from your terminal:
 
     git clone --depth=1 --recursive https://github.com/DanielKneipp/vimrc.git ~/.vim_runtime
-    sh ~/.vim_runtime/install_awesome_vimrc.sh
+    bash ~/.vim_runtime/install_awesome_vimrc.sh
 
 
 ## Fonts
@@ -98,6 +98,7 @@ I recommend reading the docs of these plugins to understand them better. Each pl
 * [vim-yankstack](https://github.com/maxbrunsfeld/vim-yankstack): Maintains a history of previous yanks, changes and deletes
 Remove all clutter and focus only on the essential. Similar to iA Writer or Write Room [Read more here](http://amix.dk/blog/post/19744)
 * [tagbar](https://github.com/majutsushi/tagbar): Vim plugin that displays tags in a window, ordered by scope
+* [YouCompleteMe](https://github.com/Valloric/YouCompleteMe): A code-completion engine for Vim 
 
 
 ## Included color schemes
