@@ -17,6 +17,10 @@ set statusline+=%*
 " let g:syntastic_check_on_wq = 0
 map <F6> :SyntasticCheck<CR>
 
+" YouCompleteMe
+let g:ycm_goto_buffer_command = 'new-or-existing-tab'
+let g:ycm_autoclose_preview_window_after_insertion = 1
+
 " let $TERM="xterm-256color"
 
 " lightline configs
