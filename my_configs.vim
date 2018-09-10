@@ -21,6 +21,10 @@ map <F6> :SyntasticCheck<CR>
 let g:ycm_goto_buffer_command = 'new-or-existing-tab'
 let g:ycm_autoclose_preview_window_after_insertion = 1
 
+" ctrlp
+" If a file is already open, open it again in a new pane instead of switching to the existing pane
+let g:ctrlp_switch_buffer = 'et'
+
 " let $TERM="xterm-256color"
 
 " lightline configs
