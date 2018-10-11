@@ -1,6 +1,9 @@
 " Hide bottom bar text
 set noshowmode
 
+" Disable left margin
+set foldcolumn=0
+
 " TagBar
 map <F8> :TagbarToggle<CR>
 
@@ -42,6 +45,6 @@ let g:lightline = {
 " Set solarized colorscheme
 syntax enable
 set background=light
-let g:solarized_termcolors=256 "this is what fixed it for me
-let g:solarized_termtrans = 1 " This gets rid of the grey background
+" let g:solarized_termcolors=256 "this is what fixed it for me
+" let g:solarized_termtrans = 1 " This gets rid of the grey background
 colorscheme solarized
