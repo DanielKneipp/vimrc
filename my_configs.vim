@@ -1,6 +1,9 @@
 " Hide bottom bar text
 set noshowmode
 
+" Don't move the cursor after highlighting a word with *
+nnoremap * *``
+
 " Disable left margin
 set foldcolumn=0
 
