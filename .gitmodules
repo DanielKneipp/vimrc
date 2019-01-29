@@ -7,3 +7,6 @@
 [submodule "sources_non_forked/rainbow_csv"]
 	path = sources_non_forked/rainbow_csv
 	url = https://github.com/mechatroner/rainbow_csv.git
+[submodule "sources_non_forked/Auto-Pairs"]
+	path = sources_non_forked/Auto-Pairs
+	url = https://github.com/vim-scripts/Auto-Pairs.git
