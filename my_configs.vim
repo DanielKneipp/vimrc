@@ -21,7 +21,13 @@ set statusline+=%*
 " let g:syntastic_auto_loc_list = 1
 " let g:syntastic_check_on_open = 1
 " let g:syntastic_check_on_wq = 0
-map <F6> :SyntasticCheck<CR>
+map <F6> :SyntasticReset<CR>
+
+" EasyAlign
+" Start interactive EasyAlign in visual mode (e.g. vipga)
+xmap ga <Plug>(EasyAlign)
+" Start interactive EasyAlign for a motion/text object (e.g. gaip)
+nmap ga <Plug>(EasyAlign)"
 
 " YouCompleteMe
 let g:ycm_goto_buffer_command = 'new-or-existing-tab'
