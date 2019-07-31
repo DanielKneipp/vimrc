@@ -48,7 +48,7 @@ set history=500
 
 " Enable filetype plugins
 filetype plugin on
-filetype indent on
+filetype indent on " Disabled to allow auto-pairs to work with python
 
 " Set to auto read when a file is changed from the outside
 set autoread
@@ -63,7 +63,8 @@ nmap <leader>w :w!<cr>
 
 " :W sudo saves the file 
 " (useful for handling the permission-denied error)
-command W w !sudo tee % > /dev/null
+command W w 
+command WW w !sudo tee % > /dev/null
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

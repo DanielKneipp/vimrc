@@ -80,20 +80,20 @@ imap ½ $
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Parenthesis/bracket
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-vnoremap $1 <esc>`>a)<esc>`<i(<esc>
-vnoremap $2 <esc>`>a]<esc>`<i[<esc>
-vnoremap $3 <esc>`>a}<esc>`<i{<esc>
-vnoremap $$ <esc>`>a"<esc>`<i"<esc>
-vnoremap $q <esc>`>a'<esc>`<i'<esc>
-vnoremap $e <esc>`>a"<esc>`<i"<esc>
+" vnoremap $1 <esc>`>a)<esc>`<i(<esc>
+" vnoremap $2 <esc>`>a]<esc>`<i[<esc>
+" vnoremap $3 <esc>`>a}<esc>`<i{<esc>
+" vnoremap $$ <esc>`>a"<esc>`<i"<esc>
+" vnoremap $q <esc>`>a'<esc>`<i'<esc>
+" vnoremap $e <esc>`>a"<esc>`<i"<esc>
 
 " Map auto complete of (, ", ', [
-inoremap $1 ()<esc>i
-inoremap $2 []<esc>i
-inoremap $3 {}<esc>i
-inoremap $4 {<esc>o}<esc>O
-inoremap $q ''<esc>i
-inoremap $e ""<esc>i
+" inoremap $1 ()<esc>i
+" inoremap $2 []<esc>i
+" inoremap $3 {}<esc>i
+" inoremap $4 {<esc>o}<esc>O
+" inoremap $q ''<esc>i
+" inoremap $e ""<esc>i
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -118,10 +118,10 @@ if executable('ag')
 endif
 
 " When you press gv you Ack after the selected text
-vnoremap <silent> gv :call VisualSelection('gv', '')<CR>
+vnoremap <silent> av :call VisualSelection('gv', '')<CR>
 
 " Open Ack and put the cursor in the right position
-map <leader>g :Ack 
+map <leader>a :Ack 
 
 " When you press <leader>r you can search and replace the selected text
 vnoremap <silent> <leader>r :call VisualSelection('replace', '')<CR>
