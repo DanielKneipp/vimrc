@@ -18,13 +18,15 @@ set statusline+=%*
 map <leader>sr :SyntasticReset<CR>
 
 " Fugitive
+let g:solarized_diffmode = 'high'
+set diffopt+=vertical
 map <leader>gr :bufdo diffoff<CR>
 map <leader>grr :windo diffoff<CR>
 map <leader>gs :Gstatus<CR>
 map <leader>gc :Gcommit<CR>
 map <leader>gp :Gpush<CR>
 map <leader>gd :Gdiff<CR>
-map <leader>gvd :Gvdiff<CR>
+map <leader>ghd :Ghdiff<CR>
 
 " EasyAlign
 " Start interactive EasyAlign in visual mode (e.g. vipga)
